@@ -54,7 +54,7 @@ const WA_SVG = '<svg class="ik" viewBox="0 0 24 24" aria-hidden="true"><path fil
 
 // Logo işareti: çekici kancası. favicon.svg ile aynı çizim.
 const LOGO_ISARET = `<svg class="logo-isaret" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f5a524"/><circle cx="30" cy="11.5" r="4" fill="none" stroke="#0a1120" stroke-width="3.4"/><path d="M30 15.5V31a8 8 0 0 1-16 0v-5" fill="none" stroke="#0a1120" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/><path d="m14 26 3.6 2.6" stroke="#0a1120" stroke-width="3.4" stroke-linecap="round"/></svg>`;
-const logo = () => `<a class="logo" href="/" aria-label="${esc(c.marka)} — ana sayfa">${LOGO_ISARET}<span class="logo-yazi"><b>ÖZTEKÇE</b><small>OTO KURTARMA · KARS</small></span></a>`;
+const logo = () => `<a class="logo" href="/">${LOGO_ISARET}<span class="logo-yazi"><b>ÖZTEKÇE</b><small>OTO KURTARMA · KARS</small></span></a>`;
 
 // ---------------------------------------------------------------- gece sahnesi (ana sayfa)
 function rastgele(tohum) { let s = tohum; return () => ((s = (s * 16807) % 2147483647) - 1) / 2147483646; }

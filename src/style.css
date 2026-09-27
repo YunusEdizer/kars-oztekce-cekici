@@ -35,7 +35,8 @@ button{font:inherit;cursor:pointer}
 .btn-buyuk{min-height:64px;padding:12px 22px;border-radius:16px;text-align:left}
 .btn-buyuk .ik{width:24px;height:24px}
 .btn-buyuk span{display:flex;flex-direction:column;gap:2px}
-.btn-buyuk small{font-size:12px;font-weight:600;opacity:.8;letter-spacing:.02em}
+.btn-buyuk small{font-size:12px;font-weight:600;opacity:.85;letter-spacing:.02em}
+.btn-wa small{opacity:1}
 .btn-buyuk b{font-size:18px;font-weight:800;letter-spacing:-.01em}
 .btn.yukleniyor{opacity:.7;pointer-events:none}
 .metin-link{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--amber-m);text-decoration:none}
@@ -336,7 +337,7 @@ a.bolge-kart:hover>.ik,a.yol-kart:hover>.ik:last-child{transform:translateX(3px)
 }
 @media (max-width:860px){
   .menu-dugme{display:flex}
-  .ust-tel span{display:none}
+  .ust-tel span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   .ust-tel{width:46px;height:46px;padding:0;border-radius:12px}
   .nav{position:fixed;inset:72px 0 auto 0;background:var(--gece);border-bottom:1px solid var(--cizgi-k);padding:12px 20px 22px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:all .2s;max-height:calc(100dvh - 72px);overflow:auto}
   .menu-acik .nav{transform:none;opacity:1;visibility:visible}
